@@ -1,32 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic setup for the browser -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=%, initial-scale=1.0">
-    <title>V2Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube</title>
 </head>
 <body>
-    <h1>Heading 1</h1>
-    <p>Lorem ipsum <strong>Hassan</strong> dolor sit, <br> amet consectetur adipisicing elit. Reiciendis eveniet quia repellat at harum ex officia dolorum. Quidem nesciunt, ab, rem laudantium nam maiores aspernatur excepturi quae obcaecati mollitia praesentium!
-    </p>
-    <h2>Heading 2</h2>
-    <p><big>Hassan</big> Lorem ipsum dolor sit amet.</p>
-    <h3>Heading 3</h3>
-    <span><B>Lorem ipsum dolor sit amet.</B></span>
-    <span> H<sup>2</sup> <u>Hassan </u>h<sub>7</sub> Lorem ipsum <mark>Hassan</mark> dolor sit amet.</span>
-    <h4><i> Hassan</i> Heading 4</h4>
-    <h5><del> Hassan</del> Heading 5</h5>
-    <h6><ins>Hassan</ins> <small>Hassan</small> Heading 6</h6>
-<hr>
-<pre>
-    Rain drops rain drops
-    Rain drops rain drops           
 
-    Rain drops rain drops
-    Rain drops rain drops
-</pre> <hr>
-<p> <a href="https://www.goole.com"target=> open google</a></p>
+    <!-- 
+      ASSIGNMENT POINT 1: Header Section
+      - We use the semantic <header> tag.
+      - We include a <span> for the logo text.
+      - We use <input type="text"> for the search bar.
+      - We include a simple text emoji 👤 for the profile icon.
+    -->
+    <header>
+        <nav>
+            <img src="images.png.png" width="150">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+            
+            <span>👤</span>
+        </nav>
+    </header>
+
+    <!-- A horizontal rule to visually separate the sections -->
+    <hr>
+
+    <!-- 
+      We use <main> for the primary content and <aside> for the
+      secondary (recommended) content.
+      This is the correct structure.
+    -->
+
+    <!-- 
+      ASSIGNMENT POINT 2: Main Video
+      - We use the semantic <main> tag to hold the primary content.
+      - We use the <video> tag with 'controls' enabled.
+      - We add a title for the video (using <h1>).
+    -->
+    <main>
+
+        <section>
+            <h1>Zootopia 2 Trailer</h1>
+            
+            <video controls width="720">
+                <!-- 
+                  Note: The video will only play if you have a file
+                  named "sample-video.mp4" in the same folder.
+                  This placeholder is correct for the assignment.
+                -->
+                <source src="Zootopia2.mp4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- 
+          ASSIGNMENT POINT 4: Video Description and Comments
+          - We use a <section> tag to group this.
+          - We use a <p> (paragraph) tag for the description.
+          - We create comments using <div> or <p> tags.
+          - We use the <strong> tag for the username (as required).
+        -->
+        <section>
+            <h2>Description</h2>
+            <p>The trailer shows Judy Hopps and Nick Wilde working as partners. They are assigned a challenging new case involving snakes, a species that apparently hasn't been seen in Zootopia for a very long time. Their boss warns them that if they fail this case, he will split them up.
+
+Their investigation leads them to a neighborhood that was cut off from the rest of Zootopia when the city was founded. There, they discover a secret population of reptiles. It appears Judy and Nick are working to prove that the snakes are not the villains, as Judy states they need to help an "innocent snake".</p>
+
+            <h3>Comments</h3>
+            
+            <!-- Comment 1 -->
+            <div>
+                <p><strong>Ali:</strong> Amazing!</p>
+            </div>
+
+            <!-- Comment 2 -->
+            <div>
+                <p><strong>Yasir:</strong> Beyond Aspectations.</p>
+            </div>
+
+             <!-- Comment 3 -->
+             <div>
+                <p><strong>Umer:</strong> I enjoyed a lot.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 
+      ASSIGNMENT POINT 3: Recommendations (Side section)
+      - We use the semantic <aside> tag as required.
+      - We create a list of 5 recommended videos.
+      - We use a <ul> (unordered list) for the list.
+      - Each item has a <div> for grouping, an <img> for the thumbnail,
+        and a <p> for the title.
+    -->
+    <aside>
+        <h2>Recommended</h2>
+        
+        <ul>
+            <!-- Item 1 -->
+            <li>
+                <a href="https://youtu.be/LzMyLV2pwws?si=MBgvXOUUqFyJ4NJf" target="_blank">
+                    <div>
+                        <img src="zotopia2.png" alt="Video Thumbnail" width="350">
+                        <p>Shraddha Kapoor is the voice of Judy Hopps | Zootopia Mein Hoga Fir Se Dhamaal | Hindi | Zootopia 2</p>
+                    </div>
+                </a>
+            </li>
+            <!-- Item 2 -->
+            <li>
+                <a href="https://youtu.be/YBOzCl0b4LI?si=HoCSl2rGm9pFdyCR" target="_blank">
+                <div>
+                    <img src="shrada.png" alt="Video Thumbnail" width="350">
+                    <p>Shraddha Kapoor is the voice of Judy Hopps in Hindi | Zootopia 2 | In Cinemas November 28</p>
+                </div>
+                </a>
+            </li>
+            <!-- Item 3 -->
+            <li>
+                <a href="https://youtu.be/co5xrfrFXmE?si=heZRhSSz8WGslJOJ" target="_blank">
+                <div>
+                    <img src="henry.jfif" alt="Video Thumbnail" width="350">
+                    <p>Henry Runs Away | Bas Karo Henry | Cartoons for Kids | Hindi Cartoons</p>
+                </div>
+                </a>
+            </li>
+            <!-- Item 4 -->
+            <li>
+                <a href="https://youtu.be/TOIel-RXUBE?si=ZH2FJBahxI_IGwU_" target="_blank">
+                <div>
+                    <img src="mona.jfif" alt="Video Thumbnail" width="350">
+                    <p>Moana Finds Her Inner Strength! 🌟 | Moana | Disney Kids</p>
+                </div>
+                </a>
+            </li>
+            <!-- Item 5 -->
+            <li>
+                <a href="https://youtu.be/bIWlll5XcOI?si=IH9qoPnhK_tnFtIK" target="_blank">
+                <div>
+                    <img src="final.jfif" alt="Video Thumbnail" width="350">
+                    <p>ZOOTOPIA 2 | Final Trailer</p>
+                </div>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- A semantic <footer> tag for the bottom of the page -->
+    <footer>
+        <hr>
+        <p>This is the footer. Page content ends here.</p>
+    </footer>
 
 </body>
 </html>
